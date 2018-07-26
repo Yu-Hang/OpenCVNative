@@ -12,13 +12,16 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++11 -frtti -fexceptions" //EDIT
+                abiFilters 'x86_64', 'armeabi-v7a', 'arm64-v8a'
+
             }
         }
     }
     //EDIT
     sourceSets {
         main {
-            jniLibs.srcDirs = ['Q:/TestOpenCVNative/app/src/main/jniLibs'] //EDIT: Use your custom location to jniLibs. Path given is only for example purposes.
+            jniLibs.srcDirs = ['Q:/TestOpenCVNative/app/src/main/jniLibs']
+            //EDIT: Use your custom location to jniLibs. Path given is only for example purposes.
         }
     }
     buildTypes {

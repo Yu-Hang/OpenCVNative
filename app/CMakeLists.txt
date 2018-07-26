@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.4.1)
 
 # [EDIT] Set Path to OpenCV and include the directories
 # pathToOpenCV is just an example to how to write in Mac.
-# General format: /Users/user-name/OpenCV-android-sdk/sdk/native
+# General format: C:/Users/user-name/OpenCV-android-sdk/sdk/native
 set(pathToOpenCV C:/Users/yuh5/Downloads/opencv-3.4.2-android-sdk/OpenCV-android-sdk/sdk/native)
 include_directories(${pathToOpenCV}/jni/include)
 
